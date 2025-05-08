@@ -1,0 +1,2 @@
+# weeklynerd
+weekly nerds minor
