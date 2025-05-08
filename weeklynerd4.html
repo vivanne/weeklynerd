@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 4 – Declarative Design</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css">
+</head>
+
+<body>
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Declarative Design</h1>
+                <h2 class="project-meta">Jeremy Keith – 12 maart 2025</h2>
+            </div>
+            <article class="project-content">
+                <h3>Muzikale compositie als metafoor</h3>
+                <p>Jeremy Keith vergelijkt twee stijlen van muziek maken:</p>
+                <ul>
+                    <li><strong>Mozart (klassiek):</strong> alles is genoteerd, met strikte instructies voor de
+                        uitvoering.</li>
+                    <li><strong>Miles Davis (jazz):</strong> weinig tot geen instructies, veel improvisatie en
+                        vertrouwen in de muzikanten.</li>
+                </ul>
+                <p>Deze benaderingen weerspiegelen hoe we ook naar programmeren kunnen kijken.</p>
+
+                <h3>Imperatief vs. declaratief programmeren</h3>
+                <ul>
+                    <li><strong>Imperatief programmeren:</strong> je beschrijft stap voor stap hoe een programma werkt.
+                    </li>
+                    <li><strong>Declaratief programmeren:</strong> je beschrijft alleen het gewenste resultaat, zonder
+                        de tussenstappen te benoemen. Voorbeeld: SQL.</li>
+                </ul>
+                <p>Declaratieve talen zijn eenvoudiger te leren, maar bieden minder directe controle.</p>
+
+                <h3>Het web als gelaagd systeem</h3>
+                <ul>
+                    <li><strong>HTML:</strong> declaratief, negeert onbekende elementen zonder te breken.</li>
+                    <li><strong>CSS:</strong> ook declaratief, onbekende eigenschappen worden genegeerd.</li>
+                    <li><strong>JavaScript:</strong> imperatief; fouten stoppen de uitvoering van het script.</li>
+                </ul>
+                <p>Het web is gebouwd op een declaratieve fundering, met een imperatieve laag daarbovenop.</p>
+
+                <h3>Voorbeeld: een knop maken</h3>
+                <ul>
+                    <li><strong>Imperatief:</strong> een div wordt met JavaScript omgevormd tot knop.</li>
+                    <li><strong>Declaratief:</strong> gebruik simpelweg <code>&lt;button&gt;</code>.</li>
+                </ul>
+                <blockquote>"JavaScript should only do what only JavaScript can do."</blockquote>
+
+                <h3>De controle loslaten</h3>
+                <p>Imperatief denken draait om controle. Declaratief denken draait om vertrouwen op het systeem. Denk
+                    aan het volgende voorbeeld:</p>
+                <pre><code>font-size: calc(0.5rem + 0.666vw);
+font-size: clamp(1rem, 0.5rem + 0.666vw, 1.5rem);</code></pre>
+                <p>Deze aanpak past bij het idee van schaalbare en responsieve typografie zonder media queries. Zie ook:
+                    <a href="https://utopia.fyi" target="_blank">utopia.fyi</a>
+                </p>
+
+                <blockquote>"CSS is a bicycle for design."</blockquote>
+
+                <h3>Handige CSS technieken en functies</h3>
+                <ul>
+                    <li><code>calc()</code>, <code>clamp()</code>, <code>min()</code>, <code>max()</code></li>
+                    <li><code>fit-content</code>, <code>min-content</code>, <code>max-content</code></li>
+                    <li><code>repeat()</code></li>
+                    <li><code>padding-inline-start</code> (beter dan <code>padding-left</code> voor inclusiviteit)</li>
+                </ul>
+                <p>Inspiratiebronnen: <a href="https://www.youtube.com/@layoutland" target="_blank">Layout Land</a>, <a
+                        href="https://every-layout.dev" target="_blank">Every Layout</a>, <a
+                        href="https://builtexcellentwebsite.es" target="_blank">Build Excellent Website</a></p>
+
+                <h3>Wanneer kies je voor declaratief of imperatief?</h3>
+                <p>Dat hangt af van verschillende factoren:</p>
+                <ul>
+                    <li><strong>Cultuur:</strong> Is er een managementstijl gebaseerd op controle of op vertrouwen?</li>
+                    <li><strong>Designsysteem:</strong> Is er een systematische aanpak die declaratief werken
+                        ondersteunt?</li>
+                    <li><strong>Het team:</strong> Hoe werkt het team het prettigst?</li>
+                    <li><strong>Het medium:</strong> Wat voor platform of technologie gebruik je?</li>
+                </ul>
+
+                <h3>Denken over denken</h3>
+                <ul>
+                    <li><strong>Analytisch denken:</strong> inzoomen, iets begrijpen door het op te splitsen.</li>
+                    <li><strong>Systeemdenken:</strong> uitzoomen, begrijpen hoe onderdelen met elkaar samenhangen.</li>
+                </ul>
+                <p>Design systems vragen vooral om analytisch denken: het draait om structuur, componenten en
+                    consistentie.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

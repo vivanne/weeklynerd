@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 1 – Stop using js for that</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css">
+</head>
+
+<body>
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Stop using js for that</h1>
+                <h2 class="project-meta">Kylian Valkhof – 5 februari 2025</h2>
+            </div>
+            <article class="project-content">
+                <h3>Rule of the least power, kiest de minst krachtige taal</h3>
+                <p>Het doel van de Browser is dat de inhoud van de pagina beschikbaar is. Meer werk in Html/css ->
+                    minder werk in js.</p>
+
+                <h3>Code voorbeelden</h3>
+
+                <h4>Custom switches</h4>
+                <code>&lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt;&lt;/label&gt;</code>
+
+                <h4>CSS</h4>
+                <code>appearance: none;</code>
+                <p>Blijft van input af waardoor je meer mogelijkheden hebt in de stijling.</p>
+
+                <pre>
+                <code>:checked { ...
+                }
+    
+                :checked::before {
+                    transform:..;
+                }
+                    </code>
+                </pre>
+
+                <code>input type="color"</code>
+                <p>Dit wordt een colorpicker</p>
+
+                <h4>In page transitions</h4>
+                <code>html { scroll-behavior: smooth; }</code>
+                <code>#my-target { scroll-margin-top: 100px; }</code>
+                <p>Header blijft bijvoorbeeld staan</p>
+
+                <h4>Accordion</h4>
+                <code>&lt;details&gt;
+                    &lt;summary&gt;...&lt;/summary&gt;
+                    &lt;p&gt;...&lt;/p&gt;
+                  &lt;/details&gt;
+                  </code>
+
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 3 – Beyond Tweening, GSAP</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css">
+</head>
+
+<body>
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Beyond Tweening met GSAP</h1>
+                <h2 class="project-meta">Cassie Evans – 7 maart 2025</h2>
+            </div>
+            <article class="project-content">
+                <h3>Wat is GSAP?</h3>
+                <p>GSAP (GreenSock Animation Platform) is een krachtige JavaScript-animatiebibliotheek. Je kunt het zien
+                    als een uitgebreide toolbox voor animaties: snel, soepel en met veel controle. Waar je met CSS
+                    beperkt bent tot eenvoudige overgangen en animaties, biedt GSAP je veel meer grip en flexibiliteit.
+                </p>
+                <p>Een basisanimatie in GSAP ziet er zo uit:</p>
+                <pre><code>gsap.to(".box", { x: 100, duration: 1 });</code></pre>
+                <p>In deze <em>tween</em> geef je een methode aan (<code>to</code>), een target (bijv.
+                    <code>.box</code>) en de eigenschappen die je wil animeren (zoals <code>x</code>,
+                    <code>duration</code>, enz.).
+                </p>
+
+                <h3>Waarom GSAP gebruiken?</h3>
+                <p>Met CSS werk je vooral declaratief. Je zegt wat er moet gebeuren, maar hebt weinig controle over de
+                    precieze timing en volgorde. Wil je een reeks animaties netjes achter elkaar laten verlopen, dan
+                    wordt het al snel complex. GSAP lost dit op met tijdlijnen:</p>
+                <pre><code>let tl = gsap.timeline();
+tl.to(".box", { x: 100 })
+  .to(".box", { y: 50 }, "+=0.5");</code></pre>
+                <p>Hiermee kun je animaties achter elkaar afspelen en exact bepalen wanneer wat gebeurt.</p>
+
+                <h3>Tweens & Quick Setters</h3>
+                <p>Tweens zijn korte animaties van één toestand naar een andere. GSAP kan ook gebruikt worden als
+                    <em>quick setter</em>, bijvoorbeeld bij een cursor-volger, waarbij je direct een waarde instelt
+                    zonder animatie.
+                </p>
+
+                <h3>Gratis plugins: ScrollTrigger</h3>
+                <p>Een populaire plugin is <strong>ScrollTrigger</strong>. Hiermee koppel je animaties aan het
+                    scrollgedrag van de gebruiker, bijvoorbeeld voor parallaxeffecten of animaties die starten wanneer
+                    iets in beeld komt.</p>
+
+                <h3>GSAP Utilities</h3>
+                <ul>
+                    <li><code>gsap.utils.random(min, max)</code> – voor natuurlijk ogende willekeur</li>
+                    <li><code>gsap.utils.mapRange()</code> – vertaal input naar een ander bereik</li>
+                    <li><code>gsap.utils.wrap()</code> – laat een waarde teruglopen naar het begin van een array</li>
+                    <li><code>gsap.utils.pipe()</code> – combineer functies in een keten</li>
+                </ul>
+
+                <h3>Meer controle dan CSS: Easings</h3>
+                <p>GSAP biedt uitgebreide controle over easing, oftewel de manier waarop een animatie versnelt of
+                    vertraagt. Je kunt experimenteren met easings voor een natuurlijkere animatie dan mogelijk is met
+                    standaard CSS.</p>
+
+                <h3>Responsieve animaties met matchMedia()</h3>
+                <p>GSAP ondersteunt <code>matchMedia()</code>, vergelijkbaar met CSS media queries, maar dan in
+                    JavaScript. Je kunt animaties aanpassen op basis van:</p>
+                <ul>
+                    <li>Schermgrootte en oriëntatie</li>
+                    <li>Pointertypes (touch, mouse)</li>
+                    <li>Hover-capaciteit</li>
+                    <li>Scroll-gedrag</li>
+                    <li>Voorkeuren zoals 'reduce motion' voor toegankelijkheid</li>
+                </ul>
+
+                <h3>Controle over animaties</h3>
+                <p>Met GSAP kun je animaties volledig beheren met methoden als:</p>
+                <ul>
+                    <li><code>play()</code></li>
+                    <li><code>pause()</code></li>
+                    <li><code>resume()</code></li>
+                    <li><code>reverse()</code></li>
+                    <li><code>restart()</code></li>
+                </ul>
+
+                <h3>Helperfuncties & Voorbeelden</h3>
+                <p>GSAP biedt kant-en-klare scripts voor bijvoorbeeld:</p>
+                <ul>
+                    <li>Horizontaal scrollende secties</li>
+                    <li>Geanimeerde container-elementen</li>
+                </ul>
+                <p>Bekijk meer voorbeelden op <a href="https://gsap.com/demos/?page=1" target="_blank">de GSAP
+                        demo-pagina</a>.</p>
+
+                <blockquote>
+                    <p><strong>Quote van Cassie Evans:</strong><br>
+                        “If all you have is a hammer, everything looks like a nail.”</p>
+                    <p>Met andere woorden: als je alleen CSS kent, probeer je alles daarmee op te lossen. Maar sommige
+                        animaties hebben meer finesse nodig, en daar is GSAP perfect voor.</p>
+                </blockquote>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

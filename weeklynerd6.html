@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 6 – Project Fugu</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css">
+</head>
+
+<body>
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Geld verdienen met Project Fugu</h1>
+                <h2 class="project-meta">Niels Leenheer – 2 april 2025</h2>
+            </div>
+            <article class="project-content">
+                <h3>Een kassa bouwen met webtechnologie</h3>
+                <p>Niels Leenheer gaf een kijkje in zijn werk aan <strong>Salon Hub</strong>, een kappers-afspraak- en
+                    kassasysteem dat volledig draait op webtechnologie. Denk aan een kassa gebouwd met Electron en
+                    Progressive Web Apps, gericht op tablets zoals Android.</p>
+
+                <h3>Wat is Project Fugu?</h3>
+                <p>Een initiatief van Google dat webapps toegang geeft tot hardware via krachtige API’s. Denk aan:</p>
+                <ul>
+                    <li>Bonprinters</li>
+                    <li>Barcode scanners</li>
+                    <li>Pinapparaten</li>
+                    <li>Klantschermen</li>
+                </ul>
+
+                <h3>Bonprinters en WebUSB</h3>
+                <ul>
+                    <li>Bonprinters communiceren via ASCII-commando’s.</li>
+                    <li>Maar: ASCII is verouderd, Unicode is de standaard.</li>
+                    <li>Elke printer spreekt een andere 'taal', dus je moet aparte code schrijven per printer.</li>
+                    <li>Werkt alleen in Chromium-browsers (zoals Chrome).</li>
+                </ul>
+                <p>Het gebruik van JavaScript-bibliotheken kan frustrerend zijn, maar dankzij moderne API’s zoals
+                    <strong>WebSerial</strong> en <strong>WebBluetooth</strong> is het nu veel toegankelijker.
+                </p>
+
+                <h3>Klantschermen via WebSerial</h3>
+                <p>Deze schermen gebruiken het oude ESC/POS-protocol. Saaie technologie, maar met WebSerial kun je ze
+                    modern aansturen. Handige library: <code>WebSerialCustomerDisplay</code>.</p>
+
+                <h3>Barcode scanners = toetsenborden</h3>
+                <ul>
+                    <li>Een scanner ‘typt’ het nummer en drukt op enter.</li>
+                    <li>Er zijn veel soorten barcodes, zoals GTIN (Global Trade Item Number).</li>
+                    <li>Gebruik: <code>WebHIDBarcodeScanner</code> of een webcammodule met canvas en workers.</li>
+                </ul>
+
+                <h3>QR-codes</h3>
+                <p>Werken hetzelfde als barcodes, maar verwijzen meestal naar URL’s. Kassasystemen negeren deze meestal
+                    – geen probleem dus.</p>
+
+                <h3>Open source = meer mogelijkheden</h3>
+                <p>Veel van deze technologieën zijn al ontwikkeld door mensen zoals Niels. Dankzij open source kun jij
+                    snel aan de slag met bewezen oplossingen.</p>
+
+                <blockquote>"Dankzij moderne Web API’s kunnen we gewoon kassasystemen bouwen in de browser."
+                </blockquote>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
