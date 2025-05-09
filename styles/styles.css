@@ -476,7 +476,7 @@ body:has(#contact:target) nav a[href="#contact"] {
 }
 
 /* Wanneer #skills actief is */
-body:has(#skills:target) #right {
+body:has(#leerdoelen:target) #right {
   position: relative; /* <<< Dit erbij */
   width: 100vw;
   overflow-y: auto;
@@ -484,11 +484,11 @@ body:has(#skills:target) #right {
 }
 
 /* Wanneer #skills actief is */
-/* body:has(#skills:target) #left {
-    position: fixed;
-    width: 0vw;
-    left: -20vw;
-} */
+body:has(#skills:target) #left {
+  position: fixed;
+  width: 0vw;
+  left: -20vw;
+}
 
 #skills {
   overflow-y: auto;
@@ -619,11 +619,44 @@ canvas {
 
 /* LEERDOELEN */
 
-#leerdoelen .wrapper ol li {
+#leerdoelen-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.leerdoelen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 60vw;
+  position: relative;
+  padding-top: 7em;
+
+  & h1 {
+    padding-bottom: 1em;
+    font-size: 3em;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.leerdoelen ol li {
   padding-bottom: 20px;
   font-family: "indivisible", sans-serif;
   font-weight: 300;
   font-style: normal;
+  line-height: 1.5em;
 
   font-size: 1em;
 }
