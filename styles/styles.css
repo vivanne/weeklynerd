@@ -616,3 +616,14 @@ canvas {
 .project-content pre {
   margin-top: 50px;
 }
+
+/* LEERDOELEN */
+
+#leerdoelen .wrapper ol li {
+  padding-bottom: 20px;
+  font-family: "indivisible", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  font-size: 1em;
+}
