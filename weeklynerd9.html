@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 8 – iO & Voice Interfaces</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"><span>Home</span></a>
+            <a href="leerdoelen.html"><span>Leerdoelen</span></a>
+            <a href="hackathon.html"><span>Hackathon</span></a>
+            <a href="eindreflectie.html"><span>Reflectie</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">iO & AI identiteiten</h1>
+                <h2 class="project-meta">Dave Bitter – 14 mei 2025</h2>
+            </div>
+            <article class="project-content">
+                <h3>Een kijkje achter de schermen bij iO</h3>
+                <p>Deze week kregen we een presentatie van Dave Bitter, teammanager Frontend Consultancy bij iO. Hij is
+                    oud-CMD’er en inmiddels Google Developer Expert voor web. Daarnaast is hij chapter lead voor
+                    frontend bij iO in Amsterdam, Utrecht én Rotterdam. Tijdens zijn verhaal kregen we niet alleen
+                    inzicht in zijn loopbaan, maar ook in hoe iO als organisatie in elkaar zit.</p>
+
+                <h3>Wat doet iO precies?</h3>
+                <p>iO noemt zichzelf een ‘blended agency’, wat inhoudt dat ze technologie, creativiteit en marketing
+                    samenbrengen. Ze geloven dat je juist door deze combinatie sterke ervaringen kunt creëren voor
+                    gebruikers. Hun motto is dan ook: “Experience is everything”. Dat zie je terug in hoe ze
+                    verschillende digitale touchpoints aanpakken – van social media tot aftercare.</p>
+
+                <h3>De digitale gebruiker centraal</h3>
+                <p>We leven in een tijd waarin mensen gemiddeld meer dan vijf uur per dag op een scherm zitten. iO
+                    speelt hierop in door elk moment van digitale interactie serieus te nemen. Denk aan alles van je
+                    digitale identiteit en social posts tot informatie opzoeken, online iets kopen en daarna de
+                    aftercare. Alles staat met elkaar in verbinding en moet als één consistente ervaring aanvoelen voor
+                    de gebruiker.</p>
+
+                <h3>AI en TikTok: het verhaal van Laica 13</h3>
+                <p>In hun kantoor in Zweden werkt iO aan een bijzonder project: Laica 13, een AI die volledig is
+                    opgevoed met TikTok. Ze is getraind op content uit de app en dat heeft gevolgen. Laica is
+                    depressief, heeft een laag zelfbeeld en een korte spanningsboog – een fictieve AI die ons
+                    confronteert met wat het betekent om op te groeien in een constante stroom van sociale media.
+                    Designers en onderzoekers kunnen met haar in gesprek om inzicht te krijgen in deze digitale
+                    realiteit.</p>
+
+                <h3>Stemgebruik op het web: natuurlijker dan ooit</h3>
+                <p>Dave Bitter liet ons deze week zien hoe toegankelijk en krachtig voice interfaces op het web
+                    inmiddels zijn. Hij bouwde live een voice user interface die niet alleen luistert naar je stem, maar
+                    ook direct terugpraat. Het mooie? Daar is helemaal niet veel code voor nodig. Met slechts een paar
+                    webtechnieken kun je een slimme, sprekende interface maken die gebruikmaakt van AI.</p>
+
+                <h3>Een korte geschiedenis van stemherkenning</h3>
+                <p>Voice interfaces bestaan al langer dan je misschien denkt. In de jaren ’50 en ’60 begon het met
+                    simpele experimenten, later in de jaren ’70 en ’80 werden korte zinnetjes en woorden herkend. In de
+                    jaren ’90 kwamen prompt-gebaseerde systemen op, en vanaf 2000 werd steminvoer toegevoegd aan
+                    zoekbalken. In de jaren ’10 kwamen Siri en Alexa, en inmiddels zijn we gewend aan tools zoals
+                    Microsoft Teams die gewoon meeluisteren.</p>
+
+                <h3>Wat maakt een goede voice interface?</h3>
+                <p>Volgens Dave is de sleutel tot een goede voice interface: gebruik maken van onze ‘human hardware’.
+                    Met andere woorden: ontwerpen voor hoe mensen écht communiceren. De drie basisingrediënten zijn:</p>
+                <ul>
+                    <li><strong>Speech Recognition:</strong> om de stem van de gebruiker te begrijpen.</li>
+                    <li><strong>ChatGPT API:</strong> om betekenisvolle antwoorden te genereren.</li>
+                    <li><strong>Speech Synthesis:</strong> om die antwoorden hardop terug te zeggen.</li>
+                </ul>
+
+                <h3>Klein beetje code, groot effect</h3>
+                <p>Dave demonstreerde hoe je de <code>SpeechRecognition</code> API gebruikt: je checkt of deze
+                    beschikbaar is in de browser, maakt een instantie aan, stelt de resultaten in op ‘intermediate’, en
+                    reageert op twee events: <code>onresult</code> en <code>onend</code>. Dit alles kost weinig code,
+                    maar levert een indrukwekkend resultaat op.</p>
+
+                <h3>Persoonlijkheid en feedback</h3>
+                <p>Wat het verschil maakt, is de ervaring die je eraan geeft. Door ChatGPT context en een bepaalde
+                    persoonlijkheid mee te geven, voelt het gesprek veel natuurlijker. Ook visuele feedback is
+                    belangrijk: laat bijvoorbeeld zien wanneer de AI ‘luistert’ of ‘nadenkt’ door animaties of
+                    bewegingen toe te voegen.</p>
+
+                <h3>Realistische stemmen en performance</h3>
+                <p>Met tools zoals ElevenLabs kun je stemmen gebruiken die bijna niet van echt te onderscheiden zijn.
+                    Maar... die kwaliteit heeft ook een keerzijde. Tijdens zijn demo werd het gesprek stroever door de
+                    laadtijd van de audio. De les? Performance is belangrijker dan perfectie. Een snelle en vloeiende
+                    ervaring is vaak waardevoller dan een superrealistische stem met vertraging.</p>
+
+                <h3>Tot slot: gewoon doen</h3>
+                <p>Dave sloot af met een quote die is blijven hangen: <strong>“Make cool stuff. Build. Don’t just
+                        discuss.”</strong> AI is uiteindelijk gewoon een nieuwe databron, maar het is de user experience
+                    die bepaalt of iets werkt of niet. Vergeet ook de oudere technieken niet – soms heb je aan de basis
+                    al genoeg om iets tofs te maken.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

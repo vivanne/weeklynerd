@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 7 – Julia Miocene</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="/"><span>Home</span></a>
+                <a href="leerdoelen.html"><span>Leerdoelen</span></a>
+                <a href="hackathon.html"><span>Hackathon</span></a>
+                <a href="eindreflectie.html"><span>Reflectie</span></a>
+            </nav>
+        </header>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Julia Miocene</h1>
+                <h2 class="project-meta">Weekly Nerd 7 – 18 maart 2024</h2>
+            </div>
+            <article class="project-content">
+                <h3>CSS = meer dan alleen styling</h3>
+                <p>Julia Miocene liet ons zien hoe je met alleen CSS kunstwerken en animaties kunt maken – zonder
+                    JavaScript, zonder SVG. Alles is opgebouwd uit simpele HTML-elementen zoals
+                    <code>&lt;div&gt;</code>, gecombineerd met slimme CSS-technieken.
+                </p>
+
+                <h3>Hoe haar CSS-animaties zijn opgebouwd</h3>
+                <p>Een personage bestaat uit geneste <code>div</code>-blokken: een hoofd bevat twee ogen, en die ogen
+                    bevatten weer pupillen – allemaal losse <code>divs</code>. Door elk element
+                    <code>position: absolute;</code> te geven binnen een relatief gepositioneerde ouder, positioneert
+                    Julia elk stukje precies waar ze het wil hebben.
+                </p>
+
+                <h4>Voorbeeldstructuur:</h4>
+                <pre><code>&lt;div&gt;  &lt;!-- HEAD --&gt;
+  &lt;div&gt;  &lt;!-- EYES --&gt;
+    &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;  &lt;!-- EYE 1 + PUPIL --&gt;
+    &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;  &lt;!-- EYE 2 + PUPIL --&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;  &lt;!-- NOSE --&gt;
+&lt;/div&gt;
+</code></pre>
+
+                <h3>CSS-technieken</h3>
+                <ul>
+                    <li><code>::before</code> en <code>::after</code> pseudo-elementen</li>
+                    <li><code>position: absolute</code> en <code>relative</code></li>
+                    <li><code>transform</code>, <code>rotate</code>, <code>scale</code></li>
+                    <li><code>clip-path</code>, <code>border-radius</code>, gradients</li>
+                    <li><code>transform-origin</code> voor het instellen van draaipunten</li>
+                </ul>
+
+                <h4>Transform-origin uitgelegd</h4>
+                <p>Een van de krachtigste tools volgens Julia is <code>transform-origin</code>: hiermee bepaal je vanaf
+                    welk punt een element draait of schaalt. Denk aan een arm die beweegt vanuit de schouder, of een
+                    klokwijzer die draait vanuit het midden. Bijvoorbeeld:</p>
+
+                <pre><code>div {
+  transform-origin: bottom center;
+}</code></pre>
+
+                <p>Hierdoor blijft de onderkant van het element op z’n plek terwijl de rest roteert. Ideaal voor armen,
+                    benen of wijzers!</p>
+
+                <h3>Persoonlijke reflectie</h3>
+                <p>De talk van Julia was ontzettend inspirerend. Ze bewijst dat je met een sterke basiskennis van CSS al
+                    waanzinnig veel kunt doen – als je creatief genoeg bent. Alles wat ik zag voelde ergens bekend, maar
+                    haar manier van denken is echt uniek. Ze daagt je uit om opnieuw te kijken naar wat je al kent.</p>
+
+                <p>Na haar presentatie ben ik extra gemotiveerd om zelf creatief aan de slag te gaan met pure CSS. Het
+                    is moeilijk, maar zeker niet onmogelijk. Ik ga binnenkort zeker experimenteren met deze technieken!
+                </p>
+
+                <blockquote>“Je hebt geen JavaScript nodig om iets te laten bewegen – alleen wat verbeelding en heel
+                    veel <code>divs</code>.”</blockquote>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

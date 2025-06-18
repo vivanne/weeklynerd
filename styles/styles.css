@@ -107,6 +107,17 @@ main {
   text-align: center;
   z-index: 50;
   text-decoration: none;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left ul li a:hover {
+  cursor: url("/images/mijn-hoofd.png") 16 16, auto;
 }
 
 #left ul li h3 {
@@ -132,6 +143,10 @@ main {
   z-index: 10;
 }
 
+header {
+  z-index: 100;
+}
+
 #left ul li::before {
   position: absolute;
   content: "";
@@ -139,10 +154,6 @@ main {
   height: 100%;
   background-color: rgb(0, 0, 0);
   border-radius: 20px;
-}
-
-#left ul li:hover {
-  cursor: url("/images/cursor-project.png") 16 16, auto;
 }
 
 #left ul li div {
@@ -198,7 +209,7 @@ main {
     font-family: "indivisible", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 0.75em;
+    font-size: 0.85em;
     /* padding-top: 30px;
         padding-left: 12px; */
   }
@@ -207,7 +218,7 @@ main {
     font-family: "indivisible", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 0.75em;
+    font-size: 0.85em;
 
     text-transform: uppercase;
   }
@@ -447,47 +458,11 @@ body:not(:has(:target)) #right {
   width: 50vw;
 }
 
-/* Home actief als er geen target is */
-body:not(:has(:target)) nav a[href="#home"] {
-  border: solid black 1px;
-  background-color: black;
-  color: white;
-}
-
-/* About actief */
-body:has(#about:target) nav a[href="#about"] {
-  border: solid black 1px;
-  background-color: black;
-  color: white;
-}
-
-/* Contact actief */
-body:has(#contact:target) nav a[href="#contact"] {
-  border: solid black 1px;
-  background-color: black;
-  color: white;
-}
-
 /* SKILLS PAGE */
 
 /* Standaard */
 #right {
   position: fixed;
-}
-
-/* Wanneer #skills actief is */
-body:has(#leerdoelen:target) #right {
-  position: relative; /* <<< Dit erbij */
-  width: 100vw;
-  overflow-y: auto;
-  height: 100vh;
-}
-
-/* Wanneer #skills actief is */
-body:has(#skills:target) #left {
-  position: fixed;
-  width: 0vw;
-  left: -20vw;
 }
 
 #skills {
@@ -503,42 +478,6 @@ body:has(#skills:target) #left {
   font-size: 2em;
   padding-bottom: 2em;
 }
-
-canvas {
-  width: 600px !important; /* Zorg ervoor dat het canvas de volledige breedte inneemt */
-  height: 600px !important; /* Pas de hoogte aan naar wens (verhoog dit voor grotere grafieken) */
-  max-width: 100%; /* Zorg ervoor dat de grafiek niet groter wordt dan de container */
-  margin: 0 auto; /* Zorg ervoor dat de grafiek gecentreerd is */
-}
-
-/* .tma-container {
-    margin: 20px;
-  }
-  
-  .tma-item {
-    margin-bottom: 30px;
-  }
-
-  .progress-bar {
-    width: 100%;
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    height: 20px;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  
-  .progress {
-    height: 100%;
-    background-color: #4caf50; 
-    transition: width 0.5s ease;
-    border-radius: 8px;
-  }
-  
-  p {
-    font-size: 14px;
-    color: #666;
-  } */
 
 #doelen {
   display: flex;
@@ -615,48 +554,4 @@ canvas {
 
 .project-content pre {
   margin-top: 50px;
-}
-
-/* LEERDOELEN */
-
-#leerdoelen-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100vw;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.leerdoelen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 60vw;
-  position: relative;
-  padding-top: 7em;
-
-  & h1 {
-    padding-bottom: 1em;
-    font-size: 3em;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-}
-
-.leerdoelen ol li {
-  padding-bottom: 20px;
-  font-family: "indivisible", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.5em;
-
-  font-size: 1em;
 }

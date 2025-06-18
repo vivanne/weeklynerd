@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Nerd 8 – Twitter Bot & Scraper</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"><span>Home</span></a>
+            <a href="leerdoelen.html"><span>Leerdoelen</span></a>
+            <a href="hackathon.html"><span>Hackathon</span></a>
+            <a href="eindreflectie.html"><span>Reflectie</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Twitter Bot & Scraper</h1>
+                <h2 class="project-meta">Steve Jonk – 14 mei 2025</h2>
+            </div>
+
+            <article class="project-content">
+                <h3>Een Twitter-bot bouwen voor groei</h3>
+                <p>Steve Jonk, een frontend developer, nam ons mee in zijn project waarin hij een Twitter follow-bot en
+                    scraper bouwde voor een klant die simpelweg “meer volgers wilde”. Wat begon als een relatief simpele
+                    opdracht, bleek uiteindelijk een traject vol technische obstakels en slimme oplossingen.</p>
+
+                <h3>Doelen van de bot</h3>
+                <p>Het project had twee doelen: allereerst het opslaan van alle volgers van een specifiek
+                    Twitteraccount, en daarna het automatisch volgen van die accounts. De aanpak? Eerst de volgers
+                    ophalen en opslaan in een database, vervolgens willekeurig accounts uit die database volgen.</p>
+
+                <h3>Gebruikte tools</h3>
+                <ul>
+                    <li><strong>n8n</strong> – voor workflow automation</li>
+                    <li><strong>Puppeteer</strong> – om browserinteracties te automatiseren</li>
+                    <li><strong>Twitter API</strong> – beperkte toegang tot Twitter-data</li>
+                    <li><strong>PostgreSQL</strong> – voor het opslaan van data</li>
+                    <li><strong>Docker</strong> – om alles te containeriseren</li>
+                    <li><strong>Ubuntu</strong> – als serveromgeving</li>
+                </ul>
+
+                <h3>Obstakels & oplossingen</h3>
+                <p>Het project draaide vooral om creatief omgaan met beperkingen. Twitter laat namelijk niet zomaar toe
+                    dat je automatisch mensen volgt of ontvolgt.</p>
+
+                <h4>1. Anti-botmaatregelen van Twitter</h4>
+                <p>Twitter probeert bots te detecteren en blokkeren. De oplossing was om alles zo menselijk mogelijk te
+                    laten lijken. Steve randomiseerde acties op zowel micro- als macroniveau, introduceerde wachttijden
+                    en pauzes, en zorgde ervoor dat de bot reageerde op errors door tijdelijk te stoppen.</p>
+
+                <h4>2. De API is extreem gelimiteerd (tenzij je veel betaalt)</h4>
+                <p>De gratis Twitter API gaf amper toegang: geen volgers ophalen, maximaal één actie per tien minuten,
+                    en toegang tot slechts 10% van de endpoints. Steve besloot daarom de frontend zelf te gebruiken als
+                    bron, met behulp van scraping.</p>
+
+                <h4>3. Scrapen via de webinterface met Puppeteer</h4>
+                <p>De enige manier om een volledige volgerslijst te zien, is via de webinterface van Twitter. Steve
+                    gebruikte Puppeteer om dit proces te automatiseren. Omdat n8n Node-gebaseerd is, kon hij een custom
+                    Docker image maken met Puppeteer erin. Zo kon hij de scraper zelf hosten.</p>
+
+                <h4>4. Frontend laat niet alle volgers zien</h4>
+                <p>Ook via de frontend zag je niet meteen alle volgers. Steve loste dit op door het netwerkverkeer te
+                    onderscheppen en de paginatie-cursors te gebruiken om steeds de volgende batch volgers op te halen.
+                </p>
+
+                <h4>5. Inloggen & displayproblemen</h4>
+                <p>Omdat de bot moest inloggen, bouwde hij een login-automatisatie en sloeg hij inloggegevens veilig op
+                    als secrets. Daarnaast had de Ubuntu-server geen grafische interface, dus gebruikte hij
+                    <code>Xvfb</code> om een virtuele display te creëren waarop de browser kon draaien.
+                </p>
+
+                <h3>Het eindresultaat</h3>
+                <p>Uiteindelijk werkte het hele systeem: volgers werden automatisch gescrapet, opgeslagen en willekeurig
+                    gevolgd. Alles draaide zelfstandig op een server in een Dockercontainer met n8n als orkestratie. Een
+                    project vol technische uitdagingen, waarin creatieve oplossingen centraal stonden.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

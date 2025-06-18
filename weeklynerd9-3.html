@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Testing</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/btj4mdm.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"><span>Home</span></a>
+            <a href="leerdoelen.html"><span>Leerdoelen</span></a>
+            <a href="hackathon.html"><span>Hackathon</span></a>
+            <a href="eindreflectie.html"><span>Reflectie</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="title-divider">
+                <h1 class="project-title">Component Testing bij Miele X</h1>
+                <h2 class="project-meta">Clarke Verdel – 14 mei 2025</h2>
+            </div>
+
+            <article class="project-content">
+                <h3>Wie is Clarke?</h3>
+                <p>Clarke Verdel is een oud-HvA student die inmiddels werkt als senior frontend engineer bij Miele X,
+                    een digital agency gevestigd op de Zuidas. Daar werken zo’n honderd mensen dagelijks aan één
+                    digitaal platform voor 26 landen. Clarke noemt zichzelf een “T-shaped engineer” en werkt aan
+                    schaalbare frontend oplossingen.</p>
+
+                <h3>Wat als software gewoon meteen werkt?</h3>
+                <p>Clarke startte met de vraag: “Wat als je software kon bouwen die gewoon meteen werkt?” Een logische
+                    vervolgvraag: hoe zorg je er als developer voor dat jouw code daadwerkelijk goed werkt? Zijn
+                    antwoord: testen – slim en gestructureerd.</p>
+
+                <h3>Designsystemen & eigen componenten</h3>
+                <p>Bij Miele werken ze met een eigen design system, waaronder een custom component genaamd
+                    <em>MieleAutocomplete</em>. Het testen van zulke componenten vereist een duidelijke aanpak, waarbij
+                    de testing-piramide een belangrijke rol speelt.
+                </p>
+
+                <h3>De testing-piramide</h3>
+                <p>Clarke liet een klassieke testing-piramide zien: onderaan zit statische tooling zoals linters en type
+                    checkers, gevolgd door component- en unit-tests, daarboven integratietests en helemaal bovenaan
+                    end-to-end tests. Hoe meer testen je toevoegt, hoe complexer het geheel wordt – dus slim kiezen is
+                    belangrijk.</p>
+
+                <h3>Statische tools</h3>
+                <p>Voor statische code-analyse gebruiken ze onder andere:</p>
+                <ul>
+                    <li><strong>ESLint</strong> voor consistentie in code</li>
+                    <li><strong>Javascript type checking</strong> met Flow of Typescript</li>
+                    <li><strong>Typescript</strong> voor typeveiligheid in het hele project</li>
+                </ul>
+
+                <h3>Component testing met de browser</h3>
+                <p>Clarke benadrukt het belang van het testen van componenten in de browser. Tools zoals
+                    <strong>Vitest</strong> maken dit mogelijk. Hierdoor kun je visueel controleren of een component
+                    werkt zoals verwacht, wat bijdraagt aan het vertrouwen in je code.
+                </p>
+
+                <h4>Voordelen van browser-based testen:</h4>
+                <ul>
+                    <li>Je ziet visuele fouten direct</li>
+                    <li>Debuggen is makkelijker</li>
+                    <li>Je hebt meer vertrouwen in je code</li>
+                </ul>
+
+                <h4>Nadeel:</h4>
+                <p>Het kost meer tijd om de tests te draaien dan bij bijvoorbeeld unit tests.</p>
+
+                <h3>Samengevat</h3>
+                <p>Testen is essentieel om betrouwbare software te bouwen. Hoe je test – met tools, component checks, of
+                    volledige browsersessies – hangt af van wat je bouwt en hoe complex het is. Clarke gaf een
+                    realistische en duidelijke kijk op hoe dat er bij een groot bedrijf als Miele uitziet.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
