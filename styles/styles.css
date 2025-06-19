@@ -117,7 +117,7 @@ main {
 }
 
 #left ul li a:hover {
-  cursor: url("images/mijn-hoofd.png") 16 16, auto;
+  cursor: url("../images/mijn-hoofd.png 16 16, auto;)
 }
 
 #left ul li h3 {
