@@ -117,7 +117,7 @@ main {
 }
 
 #left ul li a:hover {
-  cursor: url("/images/mijn-hoofd.png") 16 16, auto;
+  cursor: url("images/mijn-hoofd.png") 16 16, auto;
 }
 
 #left ul li h3 {
@@ -319,52 +319,6 @@ body:not(:has(:target)) #home {
   }
 }
 
-#talk {
-  margin-top: 50px;
-  display: grid;
-
-  background: transparent;
-
-  font-family: "indivisible", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-
-  font-size: 8vmin;
-  color: black;
-  text-transform: uppercase;
-
-  text-decoration: none;
-  border: solid rgba(0, 0, 0, 0) 1px;
-  overflow: hidden;
-  z-index: 1;
-
-  transition: 0.2s;
-}
-
-#talk {
-  cursor: default;
-}
-
-#talk:hover {
-  cursor: url("/images/mijn-hoofd.png") 16 16, auto;
-}
-
-#talk::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background-color: black;
-  transition: height 0.3s ease-in-out;
-  z-index: 0;
-}
-
-/* #talk:hover {
-    border-bottom: solid black 1px;
-} */
-
 ul li h3 {
   font-family: "indivisible", sans-serif;
   font-weight: 300;
@@ -373,16 +327,6 @@ ul li h3 {
 
   font-size: 1.4em;
 }
-
-/* #experience {
-    display: flex;
-
-}
-
-.year {
-    display: flex;
-    flex-direction: column;
-} */
 
 ul {
   list-style: none;
